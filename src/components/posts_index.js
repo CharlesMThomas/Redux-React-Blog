@@ -8,9 +8,6 @@ class PostsIndex extends Component {
         this.props.fetchPosts();
     }
 
-    // Helper function to map over prop.posts. Using
-    // map via lodash to handle mapping over an object
-    // vs over an array.
     renderPosts() {
         return _.map(this.props.posts, post => {
             return (
